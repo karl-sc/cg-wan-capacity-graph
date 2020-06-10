@@ -17,6 +17,7 @@ USAGE:
                         Default 2
 
 EXAMPLES:
+
     Show 24-hours worth PCM data for my New York Branch from 3 days ago using my auth token file
         cg-wan-capacity-graph.py --authtokenfile ~/token-karl-demopod1.txt --site-name "york" -p 24 -d 3
 
