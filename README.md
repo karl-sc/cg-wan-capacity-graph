@@ -1,6 +1,6 @@
 # cg-wan-capacity-graph
 This program displays an ASCII graph of the PCM or WAN Capacity metrics for a given time period going back an arbitrary amount of days.
-
+```
 USAGE:
   -h, --help            show this help message and exit
   --token "MYTOKEN", -t "MYTOKEN"
@@ -15,9 +15,10 @@ USAGE:
                         Default 24
   --days days, -d days  The period of time (in hours) for the resulting graph.
                         Default 2
+```
 
 EXAMPLES:
-
+```
     Show 24-hours worth PCM data for my New York Branch from 3 days ago using my auth token file
         cg-wan-capacity-graph.py --authtokenfile ~/token-karl-demopod1.txt --site-name "york" -p 24 -d 3
 
@@ -26,7 +27,7 @@ EXAMPLES:
 
     Show 4-hours worth PCM data for my Chicago Branch from 5 days ago. Force the graph height to be smaller at 5. 
         cg-wan-capacity-graph.py --site-name chicago --period 8 --days 5
-
+```
 NOTES:
     ASCII charts have limitations on display. Excessively large graphs may format incorrectly on small terminal windows 
     based on your Terminal width and height. To overcome this, select a shorter time period or increase your terminal 
